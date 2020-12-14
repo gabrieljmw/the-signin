@@ -15,7 +15,7 @@ Complete these steps to create a 'signin' prototype:
 
 ## Part 2
 
-1. In `index.html` change the `#submit` element from `type="button"` to `type="submit"`. When the user triggers a `submit`, `Event` on the `form#getstarted`, _prevent_ the form from proceeding with it's _default_ behavior (which is redirecting away from the page)
+1. In `index.html` change the `#submit` element from `type="button"` to `type="submit"`. When the user triggers a `submit` `Event` for the `form#getstarted`, _prevent_ the form from proceeding with it's _default_ behavior (which is redirecting away from the page)
    - Remove the `click` listener from the `button#submit` created earlier and move the logic within it to this listener
 2. On submit of the `form#getstarted`, only add the `.error` class to the `input.field` elements that have a `value` of `""` (blank, meaning any content within the field will prevent an error)
    - Consider what should if the user just adds spaces to the field? Compare `" " == ""` in your console to test; then find a function that will _trim_ the white spaces from a String to help validate this field
